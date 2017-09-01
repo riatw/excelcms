@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>{{title}}</h1>
+
+			<table class="table">
+				<tr>
+					<td>ID</td>
+					<td>タイトル</td>
+					<td>カテゴリー</td>
+				</tr>
+			{% for entry in entries %}
+				<tr>
+					<td>{{ entry.id }}</td>
+					<td><a href="?__mode=view&type=entry&id={{ entry.id }}">{{ entry.title }}</a></td>
+					<td>{{ entry.category }}</td>
+				</tr>
+			{% endfor %}
+			</table>
+		</div>
+	</body>
+</html>

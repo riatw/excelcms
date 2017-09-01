@@ -1,0 +1,16 @@
+{
+    "name": "suin/phpexcel-playground",
+    "authors": [
+        {
+            "name": "Hidehito Nozawa",
+            "email": "suinyeze@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpexcel": "~1.8",
+        "tecnickcom/tcpdf": "~6.2",
+        "dompdf/dompdf": "0.6.*",
+        "mpdf/mpdf": "~6.0",
+        "twig/twig": "~1.0"
+    }
+}

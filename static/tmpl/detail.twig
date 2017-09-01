@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			.tar { text-align: right; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>{{entry.title}}</h1>
+			<p class="tar"><span class="label">{{entry.category}}</span></p>
+
+			<div class="body">
+				{{entry.body}}
+			</div>
+			<div class="body">
+				{{entry.excerpt}}
+			</div>
+		</div>
+	</body>
+</html>
